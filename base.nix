@@ -5,6 +5,10 @@
 { config, pkgs, lib, ... }:
 
 {
+  imports = [
+    ./tailscale.nix
+  ];
+
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
@@ -17,6 +21,7 @@
     gawk
   ];
 
+  # auto-pruce NixOS stuff
   nix.gc = {
     automatic = true;
     dates = "Mon 3:40";
