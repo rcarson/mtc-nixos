@@ -19,6 +19,14 @@
     sudo
     gnugrep
     gawk
+    dig
+    tree
+    jq
+    yq
+    fzf
+    python3
+    age
+    sops
   ];
 
   # auto-pruce NixOS stuff

@@ -7,6 +7,7 @@
 {
   imports = [
     ./base.nix
+    ./workstation.nix
   ];
 
   hardware.bluetooth.enable = true;
