@@ -13,6 +13,7 @@
 
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    gnumake
     wget
     git
     curl
@@ -27,6 +28,12 @@
     python3
     age
     sops
+    shfmt
+    shellcheck
+    hadolint
+    yamllint
+    unzip
+    zip
   ];
 
   # auto-pruce NixOS stuff
